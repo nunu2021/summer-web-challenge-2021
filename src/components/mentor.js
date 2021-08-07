@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+import '../style/style.css'
 
 export default function Mentor(props) {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <p>{props.firstName}</p>
-      <p>{props.lastName}</p>
-      <img scr={props.profile}></img>
+    <div className='mentor-block'>
+     
+    
+      <div className='mentor-image' style= {{ backgroundImage: `url(${props.profile})`}} ></div> <br/>
+      <p className='mentor-name'>{props.firstName} {props.lastName}</p> <br/>
       <p>{props.description}</p>
     </div>
   );
