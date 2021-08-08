@@ -41,27 +41,32 @@
 
 .mentor-block{
 
-    margin: 20px;
-    padding:20px;
+    margin: 0;
+    padding: 1.5vw;
     border-radius: 20px;
     margin-bottom: 40px;
+    
+    
+    background-color: rgba(179, 215, 245, 0.5);
     display: flex;
     flex-direction: row;
     position: relative;
-    @media (max-width: 600px) {
-      display: block;
-    }
+  
+    @media (max-width: 400px) {
+        .narrow {
+          display: block
+        
 
-    place-content: center;
-    background-color: rgba(179, 215, 245, 0.5);
+        }
+      }
 
-    
+   
     
   
   }
   
   .mentor {
-    margin: 20px 0;
+    margin: 5vw;
     margin-bottom: 40px;
     display: flex;
     flex-direction: row;
@@ -73,12 +78,18 @@
 
 
   .mentor-name{
-    font-size: larger;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(4, 60, 97);
+    
+
   
   }
   
   .mentor-description{
-  
+    margin: 3%;
+    font-size: 1.3vw;
+    text-align: left;
   }
   
   .mentor-image{
